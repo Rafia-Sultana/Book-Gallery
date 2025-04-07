@@ -1,0 +1,29 @@
+.navbar {
+    
+  
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 10px;
+}
+
+/* For smaller screens (e.g., mobile) */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: start; /* Center align */
+        gap: 5px; /* Reduce gap */
+    }
+}
+
+.wish-list-btn {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
