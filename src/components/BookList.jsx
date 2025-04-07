@@ -49,6 +49,8 @@ const BookList = () => {
 
     const handleGenreFilter = useCallback( (e) =>{
         const selectedGenre = e.detail.toLowerCase().trim();
+         if(selectedGenre=="all genres") {setFilteredBooks(books);
+             return;}
        if(selectedGenre){
         setFilteredBooks(
             books.filter(book=>
